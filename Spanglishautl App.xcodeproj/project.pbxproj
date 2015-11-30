@@ -12,9 +12,33 @@
 		2226F2E91C0B6B9C009B0AE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2226F2E71C0B6B9C009B0AE0 /* Main.storyboard */; };
 		2226F2EB1C0B6B9C009B0AE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2226F2EA1C0B6B9C009B0AE0 /* Assets.xcassets */; };
 		2226F2EE1C0B6B9C009B0AE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2226F2EC1C0B6B9C009B0AE0 /* LaunchScreen.storyboard */; };
+		2226F2F61C0B6D0D009B0AE0 /* SpanglishCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226F2F51C0B6D0D009B0AE0 /* SpanglishCVC.swift */; };
+		2226F2F81C0B6E51009B0AE0 /* CoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226F2F71C0B6E51009B0AE0 /* CoverVC.swift */; };
+		2226F2FA1C0B6E62009B0AE0 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226F2F91C0B6E62009B0AE0 /* VideoVC.swift */; };
+		2226F3081C0BBECA009B0AE0 /* PageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226F3071C0BBECA009B0AE0 /* PageItemController.swift */; };
+		2226F3461C0BD490009B0AE0 /* zoe car.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2226F3451C0BD490009B0AE0 /* zoe car.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		221E0AB51C0BDAAE00426FF9 /* Spanglishuatl-Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spanglishuatl-Cover.png"; sourceTree = "<group>"; };
+		221E0AB61C0BDAAE00426FF9 /* Xocolatl2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Xocolatl2.png; sourceTree = "<group>"; };
+		221E0AB71C0BDAAE00426FF9 /* Xocolatl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Xocolatl.png; sourceTree = "<group>"; };
+		221E0AB81C0BDAAE00426FF9 /* Tomatl2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tomatl2.png; sourceTree = "<group>"; };
+		221E0AB91C0BDAAE00426FF9 /* Tomatl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tomatl.png; sourceTree = "<group>"; };
+		221E0ABA1C0BDAAE00426FF9 /* Nopalli2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nopalli2.png; sourceTree = "<group>"; };
+		221E0ABB1C0BDAAE00426FF9 /* Nopalli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nopalli.png; sourceTree = "<group>"; };
+		221E0ABC1C0BDAAE00426FF9 /* Mahiz2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mahiz2.png; sourceTree = "<group>"; };
+		221E0ABD1C0BDAAE00426FF9 /* Mahiz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mahiz.png; sourceTree = "<group>"; };
+		221E0ABE1C0BDAAE00426FF9 /* Chilli2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chilli2.png; sourceTree = "<group>"; };
+		221E0ABF1C0BDAAE00426FF9 /* Chilli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chilli.png; sourceTree = "<group>"; };
+		221E0AC01C0BDAAE00426FF9 /* Chia2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chia2.png; sourceTree = "<group>"; };
+		221E0AC11C0BDAAE00426FF9 /* Chia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chia.png; sourceTree = "<group>"; };
+		221E0AC21C0BDAAE00426FF9 /* Cacao2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cacao2.png; sourceTree = "<group>"; };
+		221E0AC31C0BDAAE00426FF9 /* Cacao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cacao.png; sourceTree = "<group>"; };
+		221E0AC41C0BDAAE00426FF9 /* Ahuacatl2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ahuacatl2.png; sourceTree = "<group>"; };
+		221E0AC51C0BDAAE00426FF9 /* Ahuacatl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ahuacatl.png; sourceTree = "<group>"; };
+		221E0AC61C0BDAAE00426FF9 /* Ahuacamolli2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ahuacamolli2.png; sourceTree = "<group>"; };
+		221E0AC71C0BDAAE00426FF9 /* Ahuacamolli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ahuacamolli.png; sourceTree = "<group>"; };
 		2226F2E01C0B6B9C009B0AE0 /* Spanglishautl App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spanglishautl App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2226F2E31C0B6B9C009B0AE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2226F2E51C0B6B9C009B0AE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +46,11 @@
 		2226F2EA1C0B6B9C009B0AE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2226F2ED1C0B6B9C009B0AE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2226F2EF1C0B6B9C009B0AE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2226F2F51C0B6D0D009B0AE0 /* SpanglishCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpanglishCVC.swift; sourceTree = "<group>"; };
+		2226F2F71C0B6E51009B0AE0 /* CoverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverVC.swift; sourceTree = "<group>"; };
+		2226F2F91C0B6E62009B0AE0 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		2226F3071C0BBECA009B0AE0 /* PageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageItemController.swift; sourceTree = "<group>"; };
+		2226F3451C0BD490009B0AE0 /* zoe car.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "zoe car.mov"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +83,46 @@
 		2226F2E21C0B6B9C009B0AE0 /* Spanglishautl App */ = {
 			isa = PBXGroup;
 			children = (
+				2226F3441C0BC510009B0AE0 /* Pages */,
 				2226F2E31C0B6B9C009B0AE0 /* AppDelegate.swift */,
 				2226F2E51C0B6B9C009B0AE0 /* ViewController.swift */,
 				2226F2E71C0B6B9C009B0AE0 /* Main.storyboard */,
+				2226F3071C0BBECA009B0AE0 /* PageItemController.swift */,
+				2226F2F71C0B6E51009B0AE0 /* CoverVC.swift */,
+				2226F2F91C0B6E62009B0AE0 /* VideoVC.swift */,
+				2226F2F51C0B6D0D009B0AE0 /* SpanglishCVC.swift */,
 				2226F2EA1C0B6B9C009B0AE0 /* Assets.xcassets */,
 				2226F2EC1C0B6B9C009B0AE0 /* LaunchScreen.storyboard */,
 				2226F2EF1C0B6B9C009B0AE0 /* Info.plist */,
 			);
 			path = "Spanglishautl App";
+			sourceTree = "<group>";
+		};
+		2226F3441C0BC510009B0AE0 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				221E0AB51C0BDAAE00426FF9 /* Spanglishuatl-Cover.png */,
+				221E0AB61C0BDAAE00426FF9 /* Xocolatl2.png */,
+				221E0AB71C0BDAAE00426FF9 /* Xocolatl.png */,
+				221E0AB81C0BDAAE00426FF9 /* Tomatl2.png */,
+				221E0AB91C0BDAAE00426FF9 /* Tomatl.png */,
+				221E0ABA1C0BDAAE00426FF9 /* Nopalli2.png */,
+				221E0ABB1C0BDAAE00426FF9 /* Nopalli.png */,
+				221E0ABC1C0BDAAE00426FF9 /* Mahiz2.png */,
+				221E0ABD1C0BDAAE00426FF9 /* Mahiz.png */,
+				221E0ABE1C0BDAAE00426FF9 /* Chilli2.png */,
+				221E0ABF1C0BDAAE00426FF9 /* Chilli.png */,
+				221E0AC01C0BDAAE00426FF9 /* Chia2.png */,
+				221E0AC11C0BDAAE00426FF9 /* Chia.png */,
+				221E0AC21C0BDAAE00426FF9 /* Cacao2.png */,
+				221E0AC31C0BDAAE00426FF9 /* Cacao.png */,
+				221E0AC41C0BDAAE00426FF9 /* Ahuacatl2.png */,
+				221E0AC51C0BDAAE00426FF9 /* Ahuacatl.png */,
+				221E0AC61C0BDAAE00426FF9 /* Ahuacamolli2.png */,
+				221E0AC71C0BDAAE00426FF9 /* Ahuacamolli.png */,
+				2226F3451C0BD490009B0AE0 /* zoe car.mov */,
+			);
+			name = Pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +186,7 @@
 				2226F2EE1C0B6B9C009B0AE0 /* LaunchScreen.storyboard in Resources */,
 				2226F2EB1C0B6B9C009B0AE0 /* Assets.xcassets in Resources */,
 				2226F2E91C0B6B9C009B0AE0 /* Main.storyboard in Resources */,
+				2226F3461C0BD490009B0AE0 /* zoe car.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2226F2FA1C0B6E62009B0AE0 /* VideoVC.swift in Sources */,
+				2226F2F81C0B6E51009B0AE0 /* CoverVC.swift in Sources */,
 				2226F2E61C0B6B9C009B0AE0 /* ViewController.swift in Sources */,
+				2226F3081C0BBECA009B0AE0 /* PageItemController.swift in Sources */,
+				2226F2F61C0B6D0D009B0AE0 /* SpanglishCVC.swift in Sources */,
 				2226F2E41C0B6B9C009B0AE0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +352,7 @@
 				2226F2F41C0B6B9C009B0AE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
