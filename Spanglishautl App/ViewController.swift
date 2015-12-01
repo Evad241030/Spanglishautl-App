@@ -23,7 +23,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         createPageViewController()
         setupPageControl()
     }
-    
+    // This is taking the PageController and sticking it into the IntialVC
     private func createPageViewController() {
         
         let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("PageController") as! UIPageViewController
@@ -72,6 +72,10 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         return nil
     }
     
+    
+    
+    
+    //I'm assigning the ordered file name to the current view.
     private func getItemController(itemIndex: Int) -> PageItemController? {
         
         if itemIndex < contentImages.count {
@@ -85,7 +89,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     }
     
     // MARK: - Page Indicator
-    
+
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
         return contentImages.count
     }
