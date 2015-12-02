@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController, UIPageViewControllerDataSource {
 
+    @IBAction func backToCoverhit(sender: UIBarButtonItem) {
+        createPageViewController()
+        setupPageControl()
+    }
+    
     
     // MARK: - Variables
     private var pageViewController: UIPageViewController?
@@ -23,6 +28,9 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         createPageViewController()
         setupPageControl()
     }
+    
+    
+    
     // This is taking the PageController and sticking it into the IntialVC
     private func createPageViewController() {
         

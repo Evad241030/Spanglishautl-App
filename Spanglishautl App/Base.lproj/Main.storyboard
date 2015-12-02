@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hQr-9i-b4r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dDO-ub-ADM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Spanglishautl-->
         <scene sceneID="EGY-DE-MVT">
             <objects>
                 <viewController id="1Re-Lh-UW4" customClass="ViewController" customModule="Spanglishautl_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,11 +20,22 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="D6T-Kf-Imh"/>
+                    <navigationItem key="navigationItem" title="Spanglishautl" id="D6T-Kf-Imh">
+                        <barButtonItem key="leftBarButtonItem" title="Back to Cover" id="mQH-sc-7yo">
+                            <connections>
+                                <action selector="backToCoverhit:" destination="1Re-Lh-UW4" id="URR-aR-TfB"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Gallery" id="dQy-lP-eda">
+                            <connections>
+                                <segue destination="lj5-b2-AJ9" kind="show" id="XAr-PG-qFX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNb-gz-Gme" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="-617"/>
+            <point key="canvasLocation" x="1680" y="-928"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="1eS-y0-129">
@@ -32,7 +43,7 @@
                 <pageViewController storyboardIdentifier="PageController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="Ni7-tb-Tql" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyc-CT-KJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2741" y="-776"/>
+            <point key="canvasLocation" x="4361" y="-748"/>
         </scene>
         <!--Page Item Controller-->
         <scene sceneID="aSR-fH-V2d">
@@ -64,10 +75,24 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="n4k-04-Paj" secondAttribute="leading" id="Cck-vF-Vq7"/>
+                            <constraint firstItem="1e4-Xi-TNk" firstAttribute="top" secondItem="n4k-04-Paj" secondAttribute="bottom" constant="24" id="IJv-yi-3Gv"/>
+                            <constraint firstItem="n4k-04-Paj" firstAttribute="top" secondItem="QSE-Dp-9Ua" secondAttribute="bottom" constant="3" id="JlG-8O-Cbp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="n4k-04-Paj" secondAttribute="trailing" id="hAK-E2-HJH"/>
                             <constraint firstItem="n4k-04-Paj" firstAttribute="centerX" secondItem="Dcg-NT-Sfa" secondAttribute="centerX" id="ifW-gN-RlD"/>
                             <constraint firstItem="n4k-04-Paj" firstAttribute="centerY" secondItem="Dcg-NT-Sfa" secondAttribute="centerY" id="z6a-l0-LpR"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JlG-8O-Cbp"/>
+                                <exclude reference="IJv-yi-3Gv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="JlG-8O-Cbp"/>
+                                <include reference="IJv-yi-3Gv"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="contentImageView" destination="n4k-04-Paj" id="GoV-sR-r4V"/>
@@ -75,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isG-kd-ErM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2035" y="82"/>
+            <point key="canvasLocation" x="2458" y="-200"/>
         </scene>
         <!--Collection View-->
         <scene sceneID="boa-hp-ywH">
@@ -86,21 +111,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kPZ-cD-SCH">
-                            <size key="itemSize" width="171" height="187"/>
+                            <size key="itemSize" width="150" height="150"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="20" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="ObQ-4J-ruT">
-                                <rect key="frame" x="0.0" y="0.0" width="171" height="187"/>
+                                <rect key="frame" x="20" y="84" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="171" height="187"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ckc-ot-NTX">
-                                            <rect key="frame" x="0.0" y="0.0" width="171" height="192"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                             <animations/>
                                         </imageView>
                                     </subviews>
@@ -119,26 +144,27 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiI-n1-ugj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1123" y="799"/>
+            <point key="canvasLocation" x="1361" y="-150"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="u9L-lg-FZW">
+        <scene sceneID="aQV-qS-ug6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hQr-9i-b4r" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnTap="YES" id="dDO-ub-ADM" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pup-25-7Rv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WPC-GM-oSV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="1Re-Lh-UW4" kind="relationship" relationship="rootViewController" id="T4j-zI-wkM"/>
+                        <segue destination="1Re-Lh-UW4" kind="relationship" relationship="rootViewController" id="Uuj-DB-9GM"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rr2-6b-OsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kcA-qZ-Mg7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="981" y="-617"/>
+            <point key="canvasLocation" x="951" y="-935"/>
         </scene>
     </scenes>
 </document>
