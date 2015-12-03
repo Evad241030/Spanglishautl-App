@@ -17,6 +17,7 @@
 		2226F2FA1C0B6E62009B0AE0 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226F2F91C0B6E62009B0AE0 /* VideoVC.swift */; };
 		2226F3081C0BBECA009B0AE0 /* PageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226F3071C0BBECA009B0AE0 /* PageItemController.swift */; };
 		2226F3461C0BD490009B0AE0 /* zoe car.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2226F3451C0BD490009B0AE0 /* zoe car.mov */; };
+		2241B2571C0FC2F700FD899C /* zoecar.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2241B2561C0FC2F700FD899C /* zoecar.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		2226F2F91C0B6E62009B0AE0 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		2226F3071C0BBECA009B0AE0 /* PageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageItemController.swift; sourceTree = "<group>"; };
 		2226F3451C0BD490009B0AE0 /* zoe car.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "zoe car.mov"; sourceTree = "<group>"; };
+		2241B2561C0FC2F700FD899C /* zoecar.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = zoecar.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,8 @@
 		2226F2E21C0B6B9C009B0AE0 /* Spanglishautl App */ = {
 			isa = PBXGroup;
 			children = (
+				2241B2561C0FC2F700FD899C /* zoecar.mov */,
+				2226F3451C0BD490009B0AE0 /* zoe car.mov */,
 				2226F3441C0BC510009B0AE0 /* Pages */,
 				2226F2E31C0B6B9C009B0AE0 /* AppDelegate.swift */,
 				2226F2E51C0B6B9C009B0AE0 /* ViewController.swift */,
@@ -120,7 +124,6 @@
 				221E0AC51C0BDAAE00426FF9 /* Ahuacatl.png */,
 				221E0AC61C0BDAAE00426FF9 /* Ahuacamolli2.png */,
 				221E0AC71C0BDAAE00426FF9 /* Ahuacamolli.png */,
-				2226F3451C0BD490009B0AE0 /* zoe car.mov */,
 			);
 			name = Pages;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				2226F2EB1C0B6B9C009B0AE0 /* Assets.xcassets in Resources */,
 				2226F2E91C0B6B9C009B0AE0 /* Main.storyboard in Resources */,
 				2226F3461C0BD490009B0AE0 /* zoe car.mov in Resources */,
+				2241B2571C0FC2F700FD899C /* zoecar.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +318,7 @@
 		2226F2F31C0B6B9C009B0AE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = "Spanglishautl App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.producerdavego.Checklists.Spanglishautl-App";
@@ -325,7 +329,7 @@
 		2226F2F41C0B6B9C009B0AE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = "Spanglishautl App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.producerdavego.Checklists.Spanglishautl-App";

@@ -21,12 +21,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Spanglishautl" id="D6T-Kf-Imh">
-                        <barButtonItem key="leftBarButtonItem" title="Back to Cover" id="mQH-sc-7yo">
+                        <barButtonItem key="leftBarButtonItem" title="Start" id="mQH-sc-7yo">
                             <connections>
                                 <action selector="backToCoverhit:" destination="1Re-Lh-UW4" id="URR-aR-TfB"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Gallery" id="dQy-lP-eda">
+                        <barButtonItem key="rightBarButtonItem" image="Gallery Nav Icon" id="dQy-lP-eda">
                             <connections>
                                 <segue destination="lj5-b2-AJ9" kind="show" id="XAr-PG-qFX"/>
                             </connections>
@@ -43,7 +43,7 @@
                 <pageViewController storyboardIdentifier="PageController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="Ni7-tb-Tql" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyc-CT-KJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4361" y="-748"/>
+            <point key="canvasLocation" x="2597" y="-996"/>
         </scene>
         <!--Page Item Controller-->
         <scene sceneID="aSR-fH-V2d">
@@ -111,21 +111,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kPZ-cD-SCH">
-                            <size key="itemSize" width="150" height="150"/>
+                            <size key="itemSize" width="100" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="20" minY="20" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="ObQ-4J-ruT">
-                                <rect key="frame" x="20" y="84" width="150" height="150"/>
+                                <rect key="frame" x="0.0" y="74" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ckc-ot-NTX">
-                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <animations/>
                                         </imageView>
                                     </subviews>
@@ -167,4 +167,7 @@
             <point key="canvasLocation" x="951" y="-935"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Gallery Nav Icon" width="22" height="22"/>
+    </resources>
 </document>

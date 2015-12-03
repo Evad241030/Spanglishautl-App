@@ -17,8 +17,11 @@ class VideoVC: UIViewController {
     
     
     @IBAction func playVideoHit(sender: UIButton) {
-    let fileURL = NSURL(fileURLWithPath: "/Volumes/G-RAID/Gabriel /Spanglishautl App/Spanglishautl App/Spanglishautl App/zoe car.mov")
-        playerView = AVPlayer(URL: fileURL)
+/*
+        let fileURL = NSURL(fileURLWithPath: "/Volumes/G-RAID/Gabriel /Spanglishautl App/Spanglishautl App/Spanglishautl App/zoe car.mov")
+        */
+        let fileURL = NSBundle.mainBundle().URLForResource("zoecar", withExtension: "mov")
+        playerView = AVPlayer(URL: fileURL!)
         
         playerViewController.player = playerView
         
