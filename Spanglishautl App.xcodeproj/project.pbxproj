@@ -18,6 +18,7 @@
 		2226F3081C0BBECA009B0AE0 /* PageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2226F3071C0BBECA009B0AE0 /* PageItemController.swift */; };
 		2226F3461C0BD490009B0AE0 /* zoe car.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2226F3451C0BD490009B0AE0 /* zoe car.mov */; };
 		2241B2571C0FC2F700FD899C /* zoecar.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2241B2561C0FC2F700FD899C /* zoecar.mov */; };
+		22B9371F1C10F6B400F7DD05 /* GalleryItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9371E1C10F6B400F7DD05 /* GalleryItemVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		2226F3071C0BBECA009B0AE0 /* PageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageItemController.swift; sourceTree = "<group>"; };
 		2226F3451C0BD490009B0AE0 /* zoe car.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "zoe car.mov"; sourceTree = "<group>"; };
 		2241B2561C0FC2F700FD899C /* zoecar.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = zoecar.mov; sourceTree = "<group>"; };
+		22B9371E1C10F6B400F7DD05 /* GalleryItemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryItemVC.swift; path = ../GalleryItemVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				2226F3451C0BD490009B0AE0 /* zoe car.mov */,
 				2226F3441C0BC510009B0AE0 /* Pages */,
 				2226F2E31C0B6B9C009B0AE0 /* AppDelegate.swift */,
+				22B9371E1C10F6B400F7DD05 /* GalleryItemVC.swift */,
 				2226F2E51C0B6B9C009B0AE0 /* ViewController.swift */,
 				2226F2E71C0B6B9C009B0AE0 /* Main.storyboard */,
 				2226F3071C0BBECA009B0AE0 /* PageItemController.swift */,
@@ -205,6 +208,7 @@
 				2226F2F81C0B6E51009B0AE0 /* CoverVC.swift in Sources */,
 				2226F2E61C0B6B9C009B0AE0 /* ViewController.swift in Sources */,
 				2226F3081C0BBECA009B0AE0 /* PageItemController.swift in Sources */,
+				22B9371F1C10F6B400F7DD05 /* GalleryItemVC.swift in Sources */,
 				2226F2F61C0B6D0D009B0AE0 /* SpanglishCVC.swift in Sources */,
 				2226F2E41C0B6B9C009B0AE0 /* AppDelegate.swift in Sources */,
 			);

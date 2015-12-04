@@ -12,6 +12,9 @@ private let reuseIdentifier = "Cell"
 
 class SpanglishCVC: UICollectionViewController {
 
+
+    
+    
 var imageArray = ["Spanglishuatl-Cover.png", "Ahuacamolli.png", "Ahuacamolli2.png", "Ahuacatl.png", "Ahuacatl2.png", "Cacao.png", "Cacao2.png", "Chia.png", "Chia2.png", "Chilli.png", "Chilli2.png", "Mahiz.png", "Mahiz2.png", "Nopalli.png", "Nopalli2.png", "Tomatl.png", "Tomatl2.png", "Xocolatl.png", "Xocolatl2.png"]
     
     override func viewDidLoad() {
@@ -66,10 +69,29 @@ var imageArray = ["Spanglishuatl-Cover.png", "Ahuacamolli.png", "Ahuacamolli2.pn
 
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-        let cell = collectionView.cellForItemAtIndexPath(indexPath) as UICollectionViewCell!
+        self.performSegueWithIdentifier("showImage", sender: self)
         
-        if let img = (cell.viewWithTag(1) as? UIImageView)?.image {
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showImage"
+        {
+            let indexPaths = self.collectionView!.indexPathsForSelectedItems()!
+            let indexPath = indexPaths[0] as NSIndexPath
+            let vc = segue.destinationViewController as! GalleryItemVC
             
+            vc.image = UIImage(named: (imageArray[indexPath.row]))!
+            vc.title = self.imageArray[indexPath.row]
+            
+        }
+    }
+    /*
+        
+    let cell = collectionView.cellForItemAtIndexPath(indexPath) as UICollectionViewCell!
+    (cell.viewWithTag(1) as? UIImageView)?.image
+    
+        if let img = (cell.viewWithTag(1) as? UIImageView)?.image {
             let iv = UIImageView(image: img)
             iv.tag = indexPath.row
             iv.userInteractionEnabled = true
@@ -87,8 +109,10 @@ var imageArray = ["Spanglishuatl-Cover.png", "Ahuacamolli.png", "Ahuacamolli2.pn
             let tap = UITapGestureRecognizer(target: self, action: "HideImage:")
             iv.addGestureRecognizer(tap)
         }
-    }
+*/
+
     
+    /*
     func HideImage(recognizer:UITapGestureRecognizer) {
         if let view = recognizer.view {
             
@@ -101,7 +125,7 @@ var imageArray = ["Spanglishuatl-Cover.png", "Ahuacamolli.png", "Ahuacamolli2.pn
                     view.removeFromSuperview()
             })
         }
-    }
+*/
 
     // MARK: UICollectionViewDelegate
 
