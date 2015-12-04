@@ -62,6 +62,7 @@ var imageArray = ["Spanglishuatl-Cover.png", "Ahuacamolli.png", "Ahuacamolli2.pn
 
         let slide = cell.viewWithTag(1) as! UIImageView
         slide.image = UIImage(named: imageArray[indexPath.row])
+        
         // Configure the cell
     
         return cell

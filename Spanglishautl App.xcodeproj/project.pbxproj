@@ -19,6 +19,7 @@
 		2226F3461C0BD490009B0AE0 /* zoe car.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2226F3451C0BD490009B0AE0 /* zoe car.mov */; };
 		2241B2571C0FC2F700FD899C /* zoecar.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2241B2561C0FC2F700FD899C /* zoecar.mov */; };
 		22B9371F1C10F6B400F7DD05 /* GalleryItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9371E1C10F6B400F7DD05 /* GalleryItemVC.swift */; };
+		22B937211C11676F00F7DD05 /* Chia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 22B937201C11676F00F7DD05 /* Chia.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		2226F3451C0BD490009B0AE0 /* zoe car.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "zoe car.mov"; sourceTree = "<group>"; };
 		2241B2561C0FC2F700FD899C /* zoecar.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = zoecar.mov; sourceTree = "<group>"; };
 		22B9371E1C10F6B400F7DD05 /* GalleryItemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GalleryItemVC.swift; path = ../GalleryItemVC.swift; sourceTree = "<group>"; };
+		22B937201C11676F00F7DD05 /* Chia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Chia.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		2226F2E21C0B6B9C009B0AE0 /* Spanglishautl App */ = {
 			isa = PBXGroup;
 			children = (
+				22B937201C11676F00F7DD05 /* Chia.mp3 */,
 				2241B2561C0FC2F700FD899C /* zoecar.mov */,
 				2226F3451C0BD490009B0AE0 /* zoe car.mov */,
 				2226F3441C0BC510009B0AE0 /* Pages */,
@@ -192,6 +195,7 @@
 				2226F2EE1C0B6B9C009B0AE0 /* LaunchScreen.storyboard in Resources */,
 				2226F2EB1C0B6B9C009B0AE0 /* Assets.xcassets in Resources */,
 				2226F2E91C0B6B9C009B0AE0 /* Main.storyboard in Resources */,
+				22B937211C11676F00F7DD05 /* Chia.mp3 in Resources */,
 				2226F3461C0BD490009B0AE0 /* zoe car.mov in Resources */,
 				2241B2571C0FC2F700FD899C /* zoecar.mov in Resources */,
 			);

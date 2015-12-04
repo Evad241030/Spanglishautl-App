@@ -7,8 +7,32 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
+
+
 
 class ViewController: UIViewController, UIPageViewControllerDataSource {
+    
+    var playerViewController = AVPlayerViewController()
+    var playerView = AVPlayer()
+    
+    
+    @IBAction func playButtonHit(sender: UIBarButtonItem) {
+        
+        let fileURL = NSBundle.mainBundle().URLForResource("zoecar", withExtension: "mov")
+        playerView = AVPlayer(URL: fileURL!)
+        
+        playerViewController.player = playerView
+        
+        self.presentViewController(playerViewController, animated: true) {
+            self.playerViewController.player?.play()
+        }
+        
+    }
+    
+    
+    
 
     @IBAction func backToCoverhit(sender: UIBarButtonItem) {
         createPageViewController()
