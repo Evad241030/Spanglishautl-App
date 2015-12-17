@@ -12,10 +12,8 @@ private let reuseIdentifier = "Cell"
 
 class SpanglishCVC: UICollectionViewController {
 
-
     
-    
-var imageArray = ["Spanglishuatl-Cover.png", "Ahuacamolli.png", "Ahuacamolli2.png", "Ahuacatl.png", "Ahuacatl2.png", "Cacao.png", "Cacao2.png", "Chia.png", "Chia2.png", "Chilli.png", "Chilli2.png", "Mahiz.png", "Mahiz2.png", "Nopalli.png", "Nopalli2.png", "Tomatl.png", "Tomatl2.png", "Xocolatl.png", "Xocolatl2.png"]
+    var imageArray = myPagesArray().pages
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +52,9 @@ var imageArray = ["Spanglishuatl-Cover.png", "Ahuacamolli.png", "Ahuacamolli2.pn
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
+
         return imageArray.count
+        
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -62,14 +62,17 @@ var imageArray = ["Spanglishuatl-Cover.png", "Ahuacamolli.png", "Ahuacamolli2.pn
 
         let slide = cell.viewWithTag(1) as! UIImageView
         slide.image = UIImage(named: imageArray[indexPath.row])
-        
         // Configure the cell
     
         return cell
     }
 
+    
+var rowToPass = Int()
+    
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        
+        let tempVar = indexPath.row
+        rowToPass = tempVar
         self.performSegueWithIdentifier("showImage", sender: self)
         
         
@@ -83,9 +86,18 @@ var imageArray = ["Spanglishuatl-Cover.png", "Ahuacamolli.png", "Ahuacamolli2.pn
             let vc = segue.destinationViewController as! GalleryItemVC
             
             vc.image = UIImage(named: (imageArray[indexPath.row]))!
-            vc.title = self.imageArray[indexPath.row]
+//            vc.title = self.imageArray[indexPath.row]
             
         }
+        let destinationVC = segue.destinationViewController as! GalleryItemVC
+        destinationVC.audioClipId = rowToPass
+        
+        if rowToPass == (imageArray.endIndex - 1) {
+        destinationVC.navigationItem.rightBarButtonItem?.tintColor = UIColor.clearColor()
+        }
+        
+        
+        
     }
     /*
         

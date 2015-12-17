@@ -15,7 +15,7 @@ class CoverVC: UIViewController, UIPageViewControllerDataSource {
     private var pageViewController: UIPageViewController?
     
     // Initialize it right away here
-    private let contentImages = ["Ahuacamolli.png", "Ahuacamolli2.png", "Ahuacatl.png", "Ahuacatl2.png", "Cacao.png", "Cacao2.png", "Chia.png", "Chia2.png", "Chilli.png", "Chilli2.png", "Mahiz.png", "Mahiz2.png", "Nopalli.png", "Nopalli2.png", "Spanglishuatl-Cover.png", "Tomatl.png", "Tomatl2.png", "Xocolatl.png", "Xocolatl2.png"]
+    private let contentImages = myPagesArray().pages
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -32,7 +32,9 @@ class CoverVC: UIViewController, UIPageViewControllerDataSource {
         if contentImages.count > 0 {
             let firstController = getItemController(0)!
             let startingViewControllers: NSArray = [firstController]
-            pageController.setViewControllers(startingViewControllers as! [UIViewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
+            
+            //Force
+            pageController.setViewControllers(startingViewControllers as? [UIViewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
         }
         
         pageViewController = pageController

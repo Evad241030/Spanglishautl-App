@@ -18,18 +18,18 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     var playerView = AVPlayer()
     
     
-    @IBAction func playButtonHit(sender: UIBarButtonItem) {
-        
-        let fileURL = NSBundle.mainBundle().URLForResource("zoecar", withExtension: "mov")
-        playerView = AVPlayer(URL: fileURL!)
-        
-        playerViewController.player = playerView
-        
-        self.presentViewController(playerViewController, animated: true) {
-            self.playerViewController.player?.play()
-        }
-        
-    }
+//    @IBAction func playButtonHit(sender: UIBarButtonItem) {
+//        
+//        let fileURL = NSBundle.mainBundle().URLForResource("zoecar", withExtension: "mov")
+//        playerView = AVPlayer(URL: fileURL!)
+//        
+//        playerViewController.player = playerView
+//        
+//        self.presentViewController(playerViewController, animated: true) {
+//            self.playerViewController.player?.play()
+//        }
+//        
+//    }
     
     
     
@@ -39,19 +39,40 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         setupPageControl()
     }
     
+
     
     // MARK: - Variables
     private var pageViewController: UIPageViewController?
     
     // Initialize it right away here
-    private let contentImages = ["Spanglishuatl-Cover.png", "Ahuacamolli.png", "Ahuacamolli2.png", "Ahuacatl.png", "Ahuacatl2.png", "Cacao.png", "Cacao2.png", "Chia.png", "Chia2.png", "Chilli.png", "Chilli2.png", "Mahiz.png", "Mahiz2.png", "Nopalli.png", "Nopalli2.png", "Tomatl.png", "Tomatl2.png", "Xocolatl.png", "Xocolatl2.png"]
+    private let contentImages = myPagesArray().pages
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         createPageViewController()
         setupPageControl()
+
     }
+    /*
+    override func viewDidAppear(animated: Bool) {
+        let nav = self.navigationController?.navigationBar
+//        nav?.barStyle = UIBarStyle.Black
+//        nav?.tintColor = UIColor.greenColor()
+//        nav?.barTintColor = UIColor.yellowColor()
+    
+        /*
+        let imageView = UIImageView(frame: CGRectMake(0, 0, 40, 40))
+        imageView.contentMode = .ScaleAspectFit
+        let name = xPics.pics[0]
+        let image = UIImage(named: name)
+        imageView.image = image
+        navigationItem.titleView = imageView
+        */
+
+        
+    }
+*/
     
     
     
