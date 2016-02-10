@@ -1,0 +1,50 @@
+Question is static. - Identify the product.
+
+The question only goes on certain pages - 
+
+Multiple Choice options.
+
+
+
+1 option must be correct.
+Question - answer and image - must have a relationship.
+
+Correct answer must also be randomly assigned to to remaining options.
+
+
+I need to set an array on answers.
+
+
+Chia.png - (Image)
+
+Chian (Correct Answer) - Randomly assigned to ABC or D
+
+Message pops out in Text Field.
+
+No - Try again.
+
+or
+
+That’s right!
+
+Proceeding to next screen - Question / Answers reset
+
+The code for the correct answer must relate to the image on the screen at that particular time.
+
+I need to set my answer = to image name
+answer then needs to be assigned to ABCD randomly
+After this is set - remaining options are filled in randomly - excluding image name option.
+
+Buttons are assigned a value - 1, 2, 3, 4
+
+a method determines if button clicked = image named 
+answer is correct method fires off.
+“Correct - this image uses the design patter shape of \(image) “
+else 
+answer is not correct method fires off - try again.
+
+process of elimination - the values don’t change - user is able to try again - even selecting the same incorrect option.
+
+
+
+
