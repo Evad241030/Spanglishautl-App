@@ -11,13 +11,15 @@ import UIKit
 class PageItemController: UIViewController {
 
     var itemIndex: Int = 0
+
+
+    
     var correctAnswer: Int?
     
     
     let normalNames = ["Spanglishuatl", "Bean", "Cacao", "Star", "Xocolatl", "Cord", "Mesquite2", "Kernel", "Mahiz", "Ribbed", "Tamalli", "Asterisk", "Nopalli", "Seed", "Chian", "Pear", "Ahuacatl", "Teardrop", "Tomatl", "Reuleaux Triangle", "Chilli", "Circles", "Ahuacamolli", "Blank"]
     
-    let possibleAnswers = ["Spanglishuatl", "Bean", "Cacao", "Star", "Xocolatl", "Cord", "Mesquite2", "Kernel", "Mahiz", "Ribbed", "Tamalli", "Asterisk", "Nopalli", "Seed", "Chian", "Pear", "Ahuacatl", "Teardrop", "Tomatl", "Reuleaux Triangle", "Chilli", "Circles", "Ahuacamolli", "Blank"]
-    
+    let possibleAnswers = ["Triangle", "Bean", "Cacao", "Star", "Xocolatl", "Cord", "Mesquite", "Kernel", "Mahiz", "Ribbed", "Tamalli", "Asterisk", "Nopalli", "Seed", "Chian", "Pear", "Ahuacatl", "Teardrop", "Tomatl", "Reuleaux Triangle", "Chilli", "Circles", "Ahuacamolli", "Rectangle"]
     
     
     @IBOutlet weak var buttonA: UIButton!
@@ -71,7 +73,7 @@ class PageItemController: UIViewController {
     }
     @IBOutlet weak var responseLabel: UILabel!
     
-    func assignAnswer() {
+    func assignAnswers() {
         
         var RandomNumber = arc4random() % 4
         RandomNumber += 1 // Don't like starting with zero
@@ -80,32 +82,32 @@ class PageItemController: UIViewController {
             
         case 1:
             buttonA.setTitle("A. \(imageName)", forState: UIControlState.Normal)
-            buttonB.setTitle("Helium", forState: UIControlState.Normal)
-            buttonC.setTitle("Lithium", forState: UIControlState.Normal)
-            buttonD.setTitle("Beryllium", forState: UIControlState.Normal)
+//            buttonB.setTitle("Helium", forState: UIControlState.Normal)
+//            buttonC.setTitle("Lithium", forState: UIControlState.Normal)
+//            buttonD.setTitle("Beryllium", forState: UIControlState.Normal)
             correctAnswer = 1
             break
             
         case 2:
-            buttonA.setTitle("Helium", forState: UIControlState.Normal)
+//            buttonA.setTitle("Helium", forState: UIControlState.Normal)
             buttonB.setTitle("B. \(imageName)", forState: UIControlState.Normal)
-            buttonC.setTitle("Lithium", forState: UIControlState.Normal)
-            buttonD.setTitle("Beryllium", forState: UIControlState.Normal)
+//            buttonC.setTitle("Lithium", forState: UIControlState.Normal)
+//            buttonD.setTitle("Beryllium", forState: UIControlState.Normal)
             correctAnswer = 2
             break
             
         case 3:
-            buttonA.setTitle("Lithium", forState: UIControlState.Normal)
-            buttonB.setTitle("Helium", forState: UIControlState.Normal)
+//            buttonA.setTitle("Lithium", forState: UIControlState.Normal)
+//            buttonB.setTitle("Helium", forState: UIControlState.Normal)
             buttonC.setTitle("C. \(imageName)", forState: UIControlState.Normal)
-            buttonD.setTitle("Beryllium", forState: UIControlState.Normal)
+//            buttonD.setTitle("Beryllium", forState: UIControlState.Normal)
             correctAnswer = 3
             break
             
         case 4:
-            buttonA.setTitle("Beryllium", forState: UIControlState.Normal)
-            buttonB.setTitle("Helium", forState: UIControlState.Normal)
-            buttonC.setTitle("Lithium", forState: UIControlState.Normal)
+//            buttonA.setTitle("Beryllium", forState: UIControlState.Normal)
+//            buttonB.setTitle("Helium", forState: UIControlState.Normal)
+//            buttonC.setTitle("Lithium", forState: UIControlState.Normal)
             buttonD.setTitle("D. \(imageName)", forState: UIControlState.Normal)
             correctAnswer = 4
             break
@@ -114,9 +116,32 @@ class PageItemController: UIViewController {
             break
         }
         
-        
-//        buttonA.setTitle(imageName, forState: UIControlState.Normal)
+}
+
+
+    
+    func assignFakeAnswers() {
+        // can i set some variables to always collect index -
+
+        if correctAnswer == 1 {
+//          buttonA.setTitle(fakery[int], forState: UIControlState.Normal)
+            buttonB.setTitle("B. \(possibleAnswers[Int(arc4random() % 20)])", forState: UIControlState.Normal)
+            buttonC.setTitle("C. \(possibleAnswers[Int(arc4random() % 20)])", forState: UIControlState.Normal)
+            buttonD.setTitle("D. \(possibleAnswers[Int(arc4random() % 20)])", forState: UIControlState.Normal)
+        } else if correctAnswer == 2 {
+            buttonA.setTitle("A. \(possibleAnswers[Int(arc4random() % 20)])", forState: UIControlState.Normal)
+            buttonC.setTitle("C. \(possibleAnswers[Int(arc4random() % 20)])", forState: UIControlState.Normal)
+            buttonD.setTitle("D. \(possibleAnswers[Int(arc4random() % 20)])", forState: UIControlState.Normal)
+        } else if correctAnswer == 3 {
+            buttonA.setTitle("A. \(possibleAnswers[Int(arc4random() % 20)])", forState: UIControlState.Normal)
+            buttonB.setTitle("B. \(possibleAnswers[Int(arc4random() % 20)])", forState: UIControlState.Normal)
+            buttonD.setTitle("D. \(possibleAnswers[Int(arc4random() % 20)])", forState: UIControlState.Normal)
+        } else {
+            buttonA.setTitle("A. \(possibleAnswers[Int(arc4random() % 20)])", forState: UIControlState.Normal)
+            buttonB.setTitle("B. \(possibleAnswers[Int(arc4random() % 20)])", forState: UIControlState.Normal)
+            buttonC.setTitle("C. \(possibleAnswers[Int(arc4random() % 20)])", forState: UIControlState.Normal)
         }
+    }
     
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -126,7 +151,8 @@ class PageItemController: UIViewController {
 //        itemIndex = 
         
         
-        assignAnswer()
+        assignAnswers()
+        assignFakeAnswers()
     }
 
 
